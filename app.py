@@ -145,9 +145,19 @@ h1, h2, h3, h4, h5, h6,
     min-height: 100vh;
 }
 
-/* ── Hide Streamlit chrome ── */
-#MainMenu, footer, header { visibility: hidden; }
-.block-container { padding-top: 1.2rem !important; padding-bottom: 2rem !important; }
+/* ── Header & Sidebar Toggle Button ── */
+#MainMenu, footer { visibility: hidden; }
+header[data-testid="stHeader"] {
+    background: transparent !important;
+}
+[data-testid="stSidebarCollapseButton"], 
+[data-testid="stSidebarExpandButton"],
+[data-testid="stHeaderIconButton"] {
+    background: rgba(255, 255, 255, 0.85) !important;
+    border: 1px solid rgba(167, 243, 208, 0.8) !important;
+    border-radius: 10px !important;
+    color: #064E3B !important;
+}
 
 /* ── Sidebar ── */
 section[data-testid="stSidebar"] {
@@ -243,69 +253,45 @@ section[data-testid="stSidebar"] {
 .sec-head { font-size: 1rem; font-weight: 800; color: #064E3B; margin: 0 0 10px 0; display: flex; align-items: center; gap: 6px; }
 
 /* ── Upload Area Styling ── */
-.stFileUploader label {
-    display: block !important;
-    margin-bottom: 6px !important;
-}
-
 .stFileUploader label p { 
     color: #064E3B !important; 
     font-weight: 800 !important;
     font-size: 0.95rem !important;
-    letter-spacing: -0.2px !important;
 }
 
 [data-testid="stFileUploaderDropzone"] {
     background: rgba(255, 255, 255, 0.88) !important;
     border: 2px dashed #6EE7B7 !important;
     border-radius: 18px !important;
-    padding: 16px 20px !important;
+    padding: 14px 18px !important;
     backdrop-filter: blur(16px) !important;
     box-shadow: 0 6px 20px rgba(6, 78, 59, 0.05) !important;
-    transition: all 0.25s ease-in-out !important;
 }
 
 [data-testid="stFileUploaderDropzone"]:hover {
     border-color: #10B981 !important;
     background: rgba(209, 250, 229, 0.65) !important;
-    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.18) !important;
 }
 
-/* Instructions & file size hint text */
-[data-testid="stFileUploaderDropzoneInstructions"] {
-    gap: 10px !important;
-}
-
-[data-testid="stFileUploaderDropzoneInstructions"] div,
+[data-testid="stFileUploaderDropzoneInstructions"] span,
 [data-testid="stFileUploaderDropzoneInstructions"] small {
     color: #047857 !important;
-    font-family: 'Space Grotesk', 'Mulish', sans-serif !important;
     font-weight: 600 !important;
-    font-size: 0.85rem !important;
 }
 
-/* Button & text inside button */
 [data-testid="stFileUploaderDropzone"] button {
     background: linear-gradient(135deg, #10B981 0%, #059669 100%) !important;
+    color: #FFFFFF !important;
     border: none !important;
     border-radius: 10px !important;
-    padding: 8px 18px !important;
-    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25) !important;
-    transition: all 0.15s ease-in-out !important;
-}
-
-[data-testid="stFileUploaderDropzone"] button * {
-    color: #FFFFFF !important;
-    font-family: 'Space Grotesk', sans-serif !important;
     font-weight: 700 !important;
-    font-size: 0.88rem !important;
-    text-shadow: none !important;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25) !important;
+}
+[data-testid="stFileUploaderDropzone"] button span,
+[data-testid="stFileUploaderDropzone"] button p {
+    color: #FFFFFF !important;
 }
 
-[data-testid="stFileUploaderDropzone"] button:hover {
-    transform: translateY(-1px) !important;
-    box-shadow: 0 6px 16px rgba(16, 185, 129, 0.35) !important;
-}
 
 
 /* ── Treatment Cards ── */
