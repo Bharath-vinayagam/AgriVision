@@ -327,4 +327,9 @@ Citation:
   System using Transfer Learning on PlantVillage Dataset [Software].
   GitHub. https://github.com/Bharath-vinayagam/AgriVision
 
+
 Built with: TensorFlow/Keras, Streamlit, Plotly, PlantVillage Dataset
+
+================================================================================
+  END OF README.txt
+================================================================================
