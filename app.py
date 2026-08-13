@@ -243,10 +243,16 @@ section[data-testid="stSidebar"] {
 .sec-head { font-size: 1rem; font-weight: 800; color: #064E3B; margin: 0 0 10px 0; display: flex; align-items: center; gap: 6px; }
 
 /* ── Upload Area Styling ── */
+.stFileUploader label {
+    display: block !important;
+    margin-bottom: 6px !important;
+}
+
 .stFileUploader label p { 
     color: #064E3B !important; 
     font-weight: 800 !important;
     font-size: 0.95rem !important;
+    letter-spacing: -0.2px !important;
 }
 
 [data-testid="stFileUploaderDropzone"] {
@@ -265,30 +271,42 @@ section[data-testid="stSidebar"] {
     box-shadow: 0 8px 25px rgba(16, 185, 129, 0.18) !important;
 }
 
-[data-testid="stFileUploaderDropzone"] span, 
-[data-testid="stFileUploaderDropzone"] small,
-[data-testid="stFileUploaderDropzone"] p,
-[data-testid="stFileUploaderDropzone"] div,
+/* Instructions & file size hint text */
 [data-testid="stFileUploaderDropzoneInstructions"] {
-    color: #064E3B !important;
-    font-family: 'Space Grotesk', 'Mulish', sans-serif !important;
+    gap: 10px !important;
 }
 
+[data-testid="stFileUploaderDropzoneInstructions"] div,
+[data-testid="stFileUploaderDropzoneInstructions"] small {
+    color: #047857 !important;
+    font-family: 'Space Grotesk', 'Mulish', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+}
+
+/* Button & text inside button */
 [data-testid="stFileUploaderDropzone"] button {
     background: linear-gradient(135deg, #10B981 0%, #059669 100%) !important;
-    color: #FFFFFF !important;
     border: none !important;
     border-radius: 10px !important;
-    font-weight: 700 !important;
-    padding: 6px 16px !important;
+    padding: 8px 18px !important;
     box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25) !important;
-    transition: transform 0.15s ease !important;
+    transition: all 0.15s ease-in-out !important;
+}
+
+[data-testid="stFileUploaderDropzone"] button * {
+    color: #FFFFFF !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 0.88rem !important;
+    text-shadow: none !important;
 }
 
 [data-testid="stFileUploaderDropzone"] button:hover {
     transform: translateY(-1px) !important;
     box-shadow: 0 6px 16px rgba(16, 185, 129, 0.35) !important;
 }
+
 
 /* ── Treatment Cards ── */
 .treat-card {
