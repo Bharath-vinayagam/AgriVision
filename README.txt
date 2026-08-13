@@ -7,6 +7,11 @@ PROJECT TITLE
 AgriVision AI: Deep Learning-Powered Plant Leaf Disease Detection System
 with Interactive Streamlit Analytics Dashboard
 
+LIVE DEMO
+─────────
+🌐 Web Dashboard : https://agrivision-leaf.streamlit.app/
+📁 GitHub Repo   : https://github.com/Bharath-vinayagam/AgriVision
+
 
 SHORT DESCRIPTION
 ─────────────────
@@ -259,12 +264,14 @@ Project  : AgriVision AI - Leaf Disease Detector
 Version  : 2.0
 Author   : Bharath Vinayagam
 Email    : bharath.v3612@gmail.com
+Live App : https://agrivision-leaf.streamlit.app/
 GitHub   : https://github.com/Bharath-vinayagam/AgriVision
 
 Citation:
   Bharath Vinayagam. (2026). AgriVision AI: Plant Leaf Disease Detection
   System using Transfer Learning on PlantVillage Dataset [Software].
-  GitHub. https://github.com/Bharath-vinayagam/AgriVision
+  Live App: https://agrivision-leaf.streamlit.app/
+  GitHub: https://github.com/Bharath-vinayagam/AgriVision
 
 
 Built with: TensorFlow/Keras, Streamlit, Plotly, PlantVillage Dataset
