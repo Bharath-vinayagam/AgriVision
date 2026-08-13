@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+.env.local
+
+# Dataset (large - not tracked in git)
+data/
+
+# Logs
+logs/
+*.log
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Pip
+pip-log.txt
+
+# NOTE: final_leaf_disease_model.keras is intentionally NOT ignored
+# so it is committed to GitHub and available for Streamlit Cloud deployment.
+# If the model exceeds 100MB, use Git LFS instead:
+#   git lfs install && git lfs track "*.keras"
