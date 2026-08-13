@@ -123,14 +123,24 @@ st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Mulish:wght@400;500;600;700;800;900&display=swap');
 
-*, html, body, [class*="css"] {
-    font-family: 'Mulish', sans-serif !important;
+/* ── Typography (preserving Material Symbols icon font) ── */
+html, body, .stApp, p, label, select, input, textarea {
+    font-family: 'Mulish', sans-serif;
 }
 
-/* Editorial headings get Space Grotesk */
 h1, h2, h3, h4, h5, h6,
 .hero-title, .sec-head, .diag-name, .metric-value {
     font-family: 'Space Grotesk', sans-serif !important;
+}
+
+/* Protect Streamlit Material Symbols / Icon fonts */
+[class*="material-symbols"], 
+[class*="material-icons"],
+[data-testid="stIcon"],
+[data-testid*="Icon"],
+span[class*="icon"],
+i {
+    font-family: 'Material Symbols Rounded', 'Material Icons', sans-serif !important;
 }
 
 /* ── Background: warm morning field + emerald mesh ── */
@@ -150,14 +160,24 @@ h1, h2, h3, h4, h5, h6,
 header[data-testid="stHeader"] {
     background: transparent !important;
 }
+
+/* Streamlit Sidebar Expand / Collapse Control Button */
+[data-testid="collapsedControl"],
 [data-testid="stSidebarCollapseButton"], 
-[data-testid="stSidebarExpandButton"],
-[data-testid="stHeaderIconButton"] {
-    background: rgba(255, 255, 255, 0.85) !important;
-    border: 1px solid rgba(167, 243, 208, 0.8) !important;
-    border-radius: 10px !important;
-    color: #064E3B !important;
+[data-testid="stSidebarExpandButton"] {
+    z-index: 999999 !important;
 }
+
+[data-testid="collapsedControl"] button,
+[data-testid="stSidebarCollapseButton"], 
+[data-testid="stSidebarExpandButton"] {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 1.5px solid #6EE7B7 !important;
+    border-radius: 12px !important;
+    color: #064E3B !important;
+    box-shadow: 0 4px 12px rgba(6, 78, 59, 0.1) !important;
+}
+
 
 /* ── Sidebar ── */
 section[data-testid="stSidebar"] {
