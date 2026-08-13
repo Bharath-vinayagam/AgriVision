@@ -328,19 +328,3 @@ Citation:
   GitHub. https://github.com/Bharath-vinayagam/AgriVision
 
 Built with: TensorFlow/Keras, Streamlit, Plotly, PlantVillage Dataset
-
-
-================================================================================
-  CHECKLIST
-================================================================================
-  [x] GitHub username    : Bharath-vinayagam
-  [x] Repo URL           : https://github.com/Bharath-vinayagam/AgriVision
-  [x] Author name        : Bharath Vinayagam
-  [x] Email              : bharath.v3612
-  [x] Model filename     : final_leaf_disease_model.keras
-  [x] Accuracy           : ~98.1% (PlantVillage benchmark)
-  [ ] Replace <DATASET_URL> with exact PlantVillage Kaggle/GitHub mirror used
-  [ ] Update copyright year in LICENSE file if added
-================================================================================
-  END OF README.txt
-================================================================================
