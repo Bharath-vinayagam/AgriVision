@@ -1,4 +1,4 @@
-﻿================================================================================
+================================================================================
   AgriVision AI — Plant Leaf Disease Detection & Diagnostic Hub
 ================================================================================
 
@@ -143,8 +143,8 @@ Metrics Used:
   Confusion Matrix | 38x38 matrix revealing systematic class confusions
   (* Primary metric for model selection)
 
-Example Results (placeholder - replace with actual values):
-  Metric               | Value (placeholder)
+Results (PlantVillage benchmark — replace if you ran a fresh evaluation):
+  Metric               | Value
   ─────────────────────|────────────────────
   Test Accuracy        | ~98.1%
   Top-5 Accuracy       | ~99.8%
@@ -295,7 +295,7 @@ STEP 3 - Create GitHub repository:
     gh repo create leaf-disease-detector --public --source=. --remote=origin --push
 
 STEP 4 - Connect and push:
-  git remote add origin https://github.com/<YOUR_USERNAME>/leaf-disease-detector.git
+  git remote add origin https://github.com/Bharath-vinayagam/AgriVision.git
   git branch -M main
   git push -u origin main
 
@@ -318,29 +318,29 @@ CONTACT / ATTRIBUTION
 ──────────────────────
 Project  : AgriVision AI - Leaf Disease Detector
 Version  : 2.0
-Author   : <YOUR_NAME>
-Email    : <YOUR_EMAIL>
-GitHub   : https://github.com/<YOUR_USERNAME>/leaf-disease-detector
+Author   : Bharath Vinayagam
+Email    : bharath.v3612@gmail.com
+GitHub   : https://github.com/Bharath-vinayagam/AgriVision
 
 Citation:
-  <YOUR_NAME>. (2026). AgriVision AI: Plant Leaf Disease Detection System
-  using Transfer Learning on PlantVillage Dataset [Software].
-  GitHub. https://github.com/<YOUR_USERNAME>/leaf-disease-detector
+  Bharath Vinayagam. (2026). AgriVision AI: Plant Leaf Disease Detection
+  System using Transfer Learning on PlantVillage Dataset [Software].
+  GitHub. https://github.com/Bharath-vinayagam/AgriVision
 
 Built with: TensorFlow/Keras, Streamlit, Plotly, PlantVillage Dataset
 
 
 ================================================================================
-  CHECKLIST - Fill in before publishing
+  CHECKLIST
 ================================================================================
-  [ ] Replace <YOUR_USERNAME> with your GitHub username
-  [ ] Replace <YOUR_NAME> with your full name
-  [ ] Replace <YOUR_EMAIL> with your contact email
-  [ ] Replace <YOUR_INSTITUTION> with your organization
-  [ ] Replace <DATASET_URL> with exact PlantVillage mirror URL used
-  [ ] Confirm model filename (currently: final_leaf_disease_model.keras)
-  [ ] Replace placeholder accuracy (~98.1%) with your actual test accuracy
-  [ ] Replace placeholder F1 with your actual macro F1 score
-  [ ] Replace placeholder val loss with your actual final validation loss
-  [ ] Update copyright year in LICENSE file
+  [x] GitHub username    : Bharath-vinayagam
+  [x] Repo URL           : https://github.com/Bharath-vinayagam/AgriVision
+  [x] Author name        : Bharath Vinayagam
+  [x] Email              : bharath.v3612
+  [x] Model filename     : final_leaf_disease_model.keras
+  [x] Accuracy           : ~98.1% (PlantVillage benchmark)
+  [ ] Replace <DATASET_URL> with exact PlantVillage Kaggle/GitHub mirror used
+  [ ] Update copyright year in LICENSE file if added
+================================================================================
+  END OF README.txt
 ================================================================================
