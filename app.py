@@ -159,36 +159,49 @@ i {
 #MainMenu, footer { visibility: hidden; }
 header[data-testid="stHeader"] {
     background: transparent !important;
+    z-index: 99999 !important;
 }
 
-/* Streamlit Sidebar Expand / Collapse Control Button */
+/* Streamlit Sidebar Expand / Collapse Control Buttons */
 [data-testid="collapsedControl"],
 [data-testid="stSidebarCollapseButton"], 
 [data-testid="stSidebarExpandButton"] {
     z-index: 999999 !important;
+    display: flex !important;
+    visibility: visible !important;
 }
 
-[data-testid="collapsedControl"],
 [data-testid="collapsedControl"] button,
-[data-testid="stSidebarCollapseButton"], 
 [data-testid="stSidebarCollapseButton"] button,
-[data-testid="stSidebarExpandButton"],
-[data-testid="stSidebarExpandButton"] button {
-    background: #064E3B !important;
-    border: 1.5px solid #10B981 !important;
+[data-testid="stSidebarExpandButton"] button,
+button[aria-label*="sidebar"],
+button[aria-label*="Sidebar"] {
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%) !important;
+    border: none !important;
     border-radius: 10px !important;
     color: #FFFFFF !important;
-    box-shadow: 0 4px 14px rgba(6, 78, 59, 0.35) !important;
+    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35) !important;
+    padding: 6px 10px !important;
+    transition: transform 0.15s ease !important;
+}
+
+[data-testid="collapsedControl"] button:hover,
+[data-testid="stSidebarCollapseButton"] button:hover,
+[data-testid="stSidebarExpandButton"] button:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 6px 18px rgba(16, 185, 129, 0.45) !important;
 }
 
 [data-testid="collapsedControl"] *,
 [data-testid="stSidebarCollapseButton"] *, 
-[data-testid="stSidebarExpandButton"] * {
+[data-testid="stSidebarExpandButton"] *,
+button[aria-label*="sidebar"] * {
     color: #FFFFFF !important;
     fill: #FFFFFF !important;
     stroke: #FFFFFF !important;
     opacity: 1 !important;
 }
+
 
 
 
