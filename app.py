@@ -168,15 +168,28 @@ header[data-testid="stHeader"] {
     z-index: 999999 !important;
 }
 
+[data-testid="collapsedControl"],
 [data-testid="collapsedControl"] button,
 [data-testid="stSidebarCollapseButton"], 
-[data-testid="stSidebarExpandButton"] {
-    background: rgba(255, 255, 255, 0.95) !important;
-    border: 1.5px solid #6EE7B7 !important;
-    border-radius: 12px !important;
-    color: #064E3B !important;
-    box-shadow: 0 4px 12px rgba(6, 78, 59, 0.1) !important;
+[data-testid="stSidebarCollapseButton"] button,
+[data-testid="stSidebarExpandButton"],
+[data-testid="stSidebarExpandButton"] button {
+    background: #064E3B !important;
+    border: 1.5px solid #10B981 !important;
+    border-radius: 10px !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 14px rgba(6, 78, 59, 0.35) !important;
 }
+
+[data-testid="collapsedControl"] *,
+[data-testid="stSidebarCollapseButton"] *, 
+[data-testid="stSidebarExpandButton"] * {
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
+    stroke: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
 
 
 /* ── Sidebar ── */
