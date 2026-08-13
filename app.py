@@ -167,42 +167,55 @@ header[data-testid="stHeader"] {
 [data-testid="stSidebarCollapseButton"], 
 [data-testid="stSidebarExpandButton"] {
     z-index: 999999 !important;
-    display: inline-flex !important;
     visibility: visible !important;
 }
 
-[data-testid="collapsedControl"],
-[data-testid="collapsedControl"] button,
-[data-testid="stSidebarCollapseButton"], 
+/* Base button styling - fixed 32x32px compact size */
 [data-testid="stSidebarCollapseButton"] button,
-[data-testid="stSidebarExpandButton"],
 [data-testid="stSidebarExpandButton"] button,
+[data-testid="collapsedControl"] button,
+[data-testid="collapsedControl"],
 button[aria-label*="sidebar"],
 button[aria-label*="Sidebar"] {
     background: linear-gradient(135deg, #10B981 0%, #059669 100%) !important;
     border: none !important;
-    border-radius: 10px !important;
-    color: #FFFFFF !important;
-    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4) !important;
-    padding: 6px 10px !important;
-    transition: transform 0.15s ease !important;
+    border-radius: 8px !important;
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    min-height: 32px !important;
+    max-width: 32px !important;
+    max-height: 32px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 2px 10px rgba(16, 185, 129, 0.35) !important;
+    cursor: pointer !important;
 }
 
-[data-testid="collapsedControl"]:hover,
-[data-testid="collapsedControl"] button:hover,
 [data-testid="stSidebarCollapseButton"] button:hover,
-[data-testid="stSidebarExpandButton"] button:hover {
+[data-testid="stSidebarExpandButton"] button:hover,
+[data-testid="collapsedControl"]:hover {
     transform: scale(1.05) !important;
-    box-shadow: 0 6px 18px rgba(16, 185, 129, 0.5) !important;
+    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.5) !important;
 }
 
-[data-testid="collapsedControl"] *,
-[data-testid="stSidebarCollapseButton"] *, 
+/* Force white icons inside both buttons */
+[data-testid="stSidebarCollapseButton"] svg,
+[data-testid="stSidebarExpandButton"] svg,
+[data-testid="collapsedControl"] svg,
+button[aria-label*="sidebar"] svg,
+button[aria-label*="Sidebar"] svg,
+[data-testid="stSidebarCollapseButton"] *,
 [data-testid="stSidebarExpandButton"] *,
-button[aria-label*="sidebar"] * {
+[data-testid="collapsedControl"] * {
     color: #FFFFFF !important;
     fill: #FFFFFF !important;
     stroke: #FFFFFF !important;
+    width: 18px !important;
+    height: 18px !important;
     opacity: 1 !important;
 }
 
