@@ -143,13 +143,13 @@ i {
     font-family: 'Material Symbols Rounded', 'Material Icons', sans-serif !important;
 }
 
-/* ── Background: warm morning field + emerald mesh ── */
+/* ── Background: harmonious mint & emerald mesh ── */
 .stApp {
     background:
-        radial-gradient(ellipse at 8% 5%,  rgba(254,243,199,.65) 0%, transparent 38%),
+        radial-gradient(ellipse at 8% 5%,   rgba(167,243,208,.75) 0%, transparent 42%),
         radial-gradient(ellipse at 92% 12%, rgba(167,243,208,.70) 0%, transparent 42%),
         radial-gradient(ellipse at 55% 92%, rgba(187,247,208,.55) 0%, transparent 40%),
-        radial-gradient(ellipse at 0% 60%,  rgba(254,249,195,.45) 0%, transparent 35%),
+        radial-gradient(ellipse at 0% 60%,  rgba(209,250,229,.60) 0%, transparent 38%),
         linear-gradient(160deg, #F0FDF4 0%, #DCFCE7 35%, #ECFDF5 65%, #F0FDF4 100%);
     background-attachment: fixed;
     min-height: 100vh;
