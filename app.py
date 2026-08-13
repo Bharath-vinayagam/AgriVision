@@ -242,8 +242,53 @@ section[data-testid="stSidebar"] {
 /* ── Section Headers ── */
 .sec-head { font-size: 1rem; font-weight: 800; color: #064E3B; margin: 0 0 10px 0; display: flex; align-items: center; gap: 6px; }
 
-/* ── Upload Area ── */
-.stFileUploader label p { color: #064E3B !important; font-weight: 700 !important; }
+/* ── Upload Area Styling ── */
+.stFileUploader label p { 
+    color: #064E3B !important; 
+    font-weight: 800 !important;
+    font-size: 0.95rem !important;
+}
+
+[data-testid="stFileUploaderDropzone"] {
+    background: rgba(255, 255, 255, 0.88) !important;
+    border: 2px dashed #6EE7B7 !important;
+    border-radius: 18px !important;
+    padding: 16px 20px !important;
+    backdrop-filter: blur(16px) !important;
+    box-shadow: 0 6px 20px rgba(6, 78, 59, 0.05) !important;
+    transition: all 0.25s ease-in-out !important;
+}
+
+[data-testid="stFileUploaderDropzone"]:hover {
+    border-color: #10B981 !important;
+    background: rgba(209, 250, 229, 0.65) !important;
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.18) !important;
+}
+
+[data-testid="stFileUploaderDropzone"] span, 
+[data-testid="stFileUploaderDropzone"] small,
+[data-testid="stFileUploaderDropzone"] p,
+[data-testid="stFileUploaderDropzone"] div,
+[data-testid="stFileUploaderDropzoneInstructions"] {
+    color: #064E3B !important;
+    font-family: 'Space Grotesk', 'Mulish', sans-serif !important;
+}
+
+[data-testid="stFileUploaderDropzone"] button {
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-weight: 700 !important;
+    padding: 6px 16px !important;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25) !important;
+    transition: transform 0.15s ease !important;
+}
+
+[data-testid="stFileUploaderDropzone"] button:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 16px rgba(16, 185, 129, 0.35) !important;
+}
 
 /* ── Treatment Cards ── */
 .treat-card {
