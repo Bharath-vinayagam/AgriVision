@@ -167,12 +167,15 @@ header[data-testid="stHeader"] {
 [data-testid="stSidebarCollapseButton"], 
 [data-testid="stSidebarExpandButton"] {
     z-index: 999999 !important;
-    display: flex !important;
+    display: inline-flex !important;
     visibility: visible !important;
 }
 
+[data-testid="collapsedControl"],
 [data-testid="collapsedControl"] button,
+[data-testid="stSidebarCollapseButton"], 
 [data-testid="stSidebarCollapseButton"] button,
+[data-testid="stSidebarExpandButton"],
 [data-testid="stSidebarExpandButton"] button,
 button[aria-label*="sidebar"],
 button[aria-label*="Sidebar"] {
@@ -180,16 +183,17 @@ button[aria-label*="Sidebar"] {
     border: none !important;
     border-radius: 10px !important;
     color: #FFFFFF !important;
-    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35) !important;
+    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4) !important;
     padding: 6px 10px !important;
     transition: transform 0.15s ease !important;
 }
 
+[data-testid="collapsedControl"]:hover,
 [data-testid="collapsedControl"] button:hover,
 [data-testid="stSidebarCollapseButton"] button:hover,
 [data-testid="stSidebarExpandButton"] button:hover {
     transform: scale(1.05) !important;
-    box-shadow: 0 6px 18px rgba(16, 185, 129, 0.45) !important;
+    box-shadow: 0 6px 18px rgba(16, 185, 129, 0.5) !important;
 }
 
 [data-testid="collapsedControl"] *,
@@ -201,6 +205,7 @@ button[aria-label*="sidebar"] * {
     stroke: #FFFFFF !important;
     opacity: 1 !important;
 }
+
 
 
 
