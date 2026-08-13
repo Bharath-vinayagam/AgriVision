@@ -35,8 +35,6 @@ Citation (APA):
   plant health to enable the development of mobile disease diagnostics.
   arXiv preprint arXiv:1511.08060.
 
-NOTE: Replace <DATASET_URL> with the exact mirror URL used during training.
-
 
 DATASET DETAILS
 ───────────────
@@ -253,65 +251,6 @@ Leaf-Disease-Detector-main/
 |-- models/                         Saved model checkpoints
 |-- results/                        Evaluation outputs (confusion matrix, reports)
 `-- logs/                           Training history logs
-
-
-HOW TO PUSH TO GITHUB
-──────────────────────────────────────────────────────────────────────────────
-
-STEP 1 - Create .gitignore in project root:
-
-  __pycache__/
-  *.py[cod]
-  venv/
-  .env
-  data/
-  logs/
-  .ipynb_checkpoints/
-  .DS_Store
-  Thumbs.db
-  *.log
-
-  NOTE: Do NOT ignore final_leaf_disease_model.keras if it is under 100MB.
-  If it exceeds 100MB, use Git LFS:
-    git lfs install
-    git lfs track "*.keras"
-    git add .gitattributes
-
-STEP 2 - Initialise git:
-  cd D:\Leaf-Disease-Detector\Leaf-Disease-Detector-main
-  git init
-  git add .
-  git commit -m "Initial commit: AgriVision AI - Leaf Disease Detector"
-
-STEP 3 - Create GitHub repository:
-  Option A (Web):
-    1. Go to https://github.com/new
-    2. Name: leaf-disease-detector
-    3. Do NOT initialise with README
-    4. Copy the HTTPS URL shown
-
-  Option B (GitHub CLI):
-    gh auth login
-    gh repo create leaf-disease-detector --public --source=. --remote=origin --push
-
-STEP 4 - Connect and push:
-  git remote add origin https://github.com/Bharath-vinayagam/AgriVision.git
-  git branch -M main
-  git push -u origin main
-
-STEP 5 - Add LICENSE (MIT recommended):
-  1. Visit https://choosealicense.com/licenses/mit/
-  2. Copy text, fill in year and name, save as LICENSE
-  git add LICENSE
-  git commit -m "Add MIT License"
-  git push
-
-STEP 6 - Deploy to Streamlit Community Cloud (Free):
-  1. Go to https://share.streamlit.io
-  2. Sign in with GitHub
-  3. New app -> repo: leaf-disease-detector | branch: main | file: app.py
-  4. Click Deploy
-  5. Live URL: https://<YOUR_USERNAME>-leaf-disease-detector.streamlit.app
 
 
 CONTACT / ATTRIBUTION
